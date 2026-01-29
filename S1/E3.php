@@ -1,0 +1,22 @@
+<?php
+
+class User
+{
+
+    private $email;
+
+
+    public function setEmail($email) {
+        $this->email = $email;
+    }
+    public function getEmail() {
+        return $this->email ;
+    }
+
+}
+
+$user = new User();
+
+$user->setEmail('med@gmail.com');
+
+echo $user->getEmail();
